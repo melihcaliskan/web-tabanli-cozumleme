@@ -1,0 +1,209 @@
+body {
+    background-color: #fafafa;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .container {
+    max-width: 1010px;
+  }
+  
+  header {
+    padding: 10px 0;
+    background-color: #fff;
+    border: 1px solid #edeeee;
+  }
+  header .row {
+    display: flex;
+    align-items: center;
+  }
+  header .header-logo img {
+    max-width: 160px;
+  }
+  header .header-search {
+    text-align: center;
+  }
+  header .header-search input {
+    border-radius: 30px;
+    background-color: #fafafa;
+    border: 1px solid #edeeee;
+    text-align: center;
+    padding: 5px 7px;
+    outline: 0;
+  }
+  header .header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  header .header-buttons a {
+    margin-left: 15px;
+  }
+  
+  .button {
+    padding: 5px 20px;
+  }
+  .button:hover, .button:active, .button:focus {
+    text-decoration: none;
+  }
+  .button.button-blue {
+    background-color: #4090db;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 20px;
+  }
+  .button.follow {
+    background-color: #fafafa;
+    color: #4090db;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 2px solid #4090db;
+    transition: all 0.5s;
+  }
+  .button.follow:hover {
+    background-color: #4090db;
+    color: #fff;
+  }
+  
+  .user-info {
+    margin-top: 35px;
+  }
+  .user-info > .container > .row {
+    display: flex;
+    align-items: center;
+  }
+  .user-info .profile-photo {
+    text-align: center;
+  }
+  .user-info .profile-photo .img-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .user-info .user-stats {
+    clear: both;
+    margin-top: 15px;
+    overflow: hidden;
+  }
+  .user-info .user-stats div {
+    float: left;
+    margin-right: 10px;
+  }
+  .user-info .follow p {
+    float: left;
+    font-size: 25px;
+    margin-right: 10px;
+    color: #4b4f6d;
+    line-height: 25px;
+    margin-top: 2.5px;
+  }
+  .user-info .follow a {
+    display: inline-block;
+  }
+  .user-info .user-biography {
+    clear: both;
+    min-height: 75px;
+    margin-top: 15px;
+  }
+  .user-info .user-biography a {
+    color: #4a6fa3;
+  }
+  
+  .photo-grid {
+    margin-top: 20px;
+  }
+  .photo-grid .grid {
+    margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
+  }
+  .photo-grid .grid img {
+    max-width: 100%;
+  }
+  .photo-grid .grid .overlay {
+    position: absolute;
+    width: calc(100% - 30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100%;
+    left: 15px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .photo-grid .grid .overlay.shows {
+    opacity: 1;
+  }
+  .photo-grid .grid .overlay div {
+    margin-right: 10px;
+  }
+  
+  .load-more {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #3897f0;
+    color: #3897f0;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.4s;
+  }
+  .load-more:hover {
+    background-color: #3897f0;
+    color: #fff;
+  }
+  
+  .lightbox {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .lightbox.visible-box {
+    display: flex;
+  }
+  .lightbox img {
+    height: 90%;
+    max-width: 100%;
+  }
+  .lightbox i {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .morph-button.morph-button-fixed {
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .morph-button.morph-button-fixed button {
+    background: transparent;
+    color: #4090db;
+  }
+  
+  .morph-content {
+    background-color: #fff !important;
+  }
