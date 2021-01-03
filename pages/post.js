@@ -97,7 +97,7 @@ function Post(props) {
             <>
               {posts.nextPage < posts.total &&
                 posts.data.length !== posts.total ? (
-                  <button onClick={loadMoreClick}>Next</button>
+                  <button onClick={loadMoreClick}>Sonraki</button>
                 ) : (
                   <span className="span-info">Paylaşımların sonuna gelindi</span>
                 )}

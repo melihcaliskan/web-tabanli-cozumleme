@@ -50,10 +50,8 @@ export default function Instagram() {
             <div class="user-info">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-3 profile-photo">
-                            <div class="img-wrapper">
-                                <img src="https://scontent-frx5-1.cdninstagram.com/vp/ffd9c160a1d61fb2eab95d1ce553744f/5C85BB39/t51.2885-19/s150x150/23421635_1355016614620383_2372662405302845440_n.jpg" alt="" />
-                            </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <img style={{ width: 160, height: 140, borderRadius: "50%", marginTop: -30 }} src="https://images.bjk.com.tr/images/news/kulubumuzden-aciklama_705x400_000050.jpg" alt="" />
                         </div>
 
                         <div class="col-xs-12 col-sm-9">

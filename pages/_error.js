@@ -6,8 +6,8 @@ function Error({ statusCode }) {
     <div className="page-error">
       <h2 className="text-warning">
         {statusCode
-          ? `An error ${statusCode} occurred on server`
-          : 'An error occurred on client'}
+          ? `${statusCode} - Sunucuda bir hata oluştu`
+          : 'Bir hata oluştu'}
       </h2>
       <span className="small clearfix d-block text-center my-2">
         <Link href="/">

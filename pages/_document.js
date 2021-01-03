@@ -14,7 +14,6 @@ class MyDocument extends Document {
       <Html>
         <Head />
         <body className="home">
-          {/* <script src="noflash.js" /> */}
           <Main />
           <NextScript />
         </body>
