@@ -3,9 +3,7 @@ import middleware from '../../../middleware/auth';
 const models = require('../../../db/models/index');
 
 const handler = nextConnect()
-  // Middleware
   .use(middleware)
-  // Get method
   .get(async (req, res) => {
     const { slug } = req.query;
     const post = await models.posts.findOne({
@@ -19,7 +17,6 @@ const handler = nextConnect()
         },
       ],
       order: [
-        // Will escape title and validate DESC against a list of valid direction parameters
         ['createdAt', 'ASC'],
       ],
     });
@@ -49,7 +46,7 @@ const handler = nextConnect()
   })
   // Patch method
   .patch(async (req, res) => {
-    throw new Error('Throws me around! Error can be caught and handled.');
+    throw new Error('Bir hata oluştu.');
   });
 
 export default handler;

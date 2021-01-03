@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Router from 'next/router';
+import multer from 'multer';
 import { getAppCookies, verifyToken } from '../middleware/utils';
 import NProgress from 'nprogress';
 import "tailwindcss/tailwind.css"

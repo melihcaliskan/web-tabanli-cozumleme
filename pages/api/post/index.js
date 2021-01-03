@@ -22,7 +22,6 @@ const handler = nextConnect()
         exclude: ['userId'],
       },
       order: [
-        // Will escape title and validate DESC against a list of valid direction parameters
         ['id', 'DESC'],
       ],
       offset: nextPage ? +nextPage : 0,
