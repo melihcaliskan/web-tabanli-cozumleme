@@ -32,15 +32,14 @@ const handler = nextConnect()
             console.log('Sonuçlar: ', predictions);
 
             // Sonuçları veritabanına kaydet
-            const newPost = await models.posts.create({
-                title,
-                content: predictions[0].className,
-                status: 1,
-                userId: user.id,
-              });
+            // const newPost = await models.posts.create({
+            //     title,
+            //     content: predictions[0].className,
+            //     status: 1,
+            //     userId: user.id,
+            //   });
             return res.status(200).json({ data: predictions });
         }
-
         imageClassification("kedi.jpg");
     })
 export default handler;

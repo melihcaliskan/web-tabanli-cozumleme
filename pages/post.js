@@ -19,7 +19,12 @@ function Post(props) {
       return (
         <Link key={j} href="/post/[slug]" as={`/post/${post.slug}`}>
           <a className="card">
-            <h3 className="headline">{post.title}</h3>
+            <img src={post.title} className="mb-5 rounded-lg" style={{ width: "100%" }} />
+            <p className="text-4xl">Fotoğrafın içeriği: {post.content}</p>
+            <audio className="mt-3 mb-10" src={"https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q=Foto%C4%9Fraf%C4%B1n%20i%C3%A7eri%C4%9Fi%20" + encodeURI(post.content) + "&tl=tr&total=1&idx=0&textlen=51"} controls>
+              Your browser does not support the audio element.
+                </audio>
+            <hr className="my-3" />
             <div>
               <small>{post.createdAt}</small>
             </div>
@@ -28,7 +33,6 @@ function Post(props) {
                 Paylaşan : {post.user.firstName || ''} {post.user.lastName || ''}
               </small>
             </div>
-            <p>{post.content}</p>
           </a>
         </Link>
       );

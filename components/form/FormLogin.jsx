@@ -10,7 +10,7 @@ function FormLogin({ props }) {
 
   return (
     <form className="form-login card" style={{ margin: "0 auto" }} method="POST" onSubmit={onSubmitHandler}>
-      <div className="form-group">
+      <div className="form-group" style={{ width: 600 }}>
         <h2>Giriş Yap</h2>
         <hr />
         {stateFormMessage.status === 'error' && (

@@ -14,7 +14,7 @@ function FormRegister({ props }) {
       className="form-register card"
       method="POST"
     >
-      <div className="form-group">
+      <div className="form-group" style={{ width: 600 }}>
         <h2>Kayıt Ol</h2>
         <hr />
         {stateFormMessage.status === 'error' && (
@@ -29,7 +29,7 @@ function FormRegister({ props }) {
           type="text"
           id="username"
           name="username"
-          placeholder="Username"
+          placeholder="Kullanıcı adı"
           readOnly={loading && true}
           value={stateFormData.username.value}
         />
@@ -42,7 +42,7 @@ function FormRegister({ props }) {
           type="text"
           id="email"
           name="email"
-          placeholder="Email"
+          placeholder="E-posta"
           readOnly={loading && true}
           defaultValue={stateFormData.email.value}
         />
@@ -55,7 +55,7 @@ function FormRegister({ props }) {
           type="password"
           id="password"
           name="password"
-          placeholder="Password"
+          placeholder="Şifre"
           readOnly={loading && true}
           defaultValue={stateFormData.password.value}
         />
